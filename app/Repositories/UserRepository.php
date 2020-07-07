@@ -43,6 +43,16 @@ class UserRepository implements UserRepositoryInterface
         return $providers;
     }
 
+    public function getcurrencyFilter($currency){
+        $providers = array();
+        $allUsers = $this->getUsers();
+        foreach ($allUsers as $users)
+        {
+            if($users->currency === $currency){array_push($providers, $users);}
+        }
+        return $providers;
+    }
+
 
 
 }

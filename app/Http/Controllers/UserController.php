@@ -34,4 +34,8 @@ class UserController extends Controller
         return $this->apiResponse($this->userRepository->getFilteredByStatusCode($code));
     }
 
+    public function currencyFilter($currency){
+        return $this->apiResponse($this->userRepository->getcurrencyFilter($currency));
+    }
+
 }

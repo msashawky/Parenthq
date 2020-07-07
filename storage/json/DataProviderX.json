@@ -2,7 +2,7 @@
     "users":[
         {
             "parentAmount":280,
-            "Currency":"EUR",
+            "currency":"EUR",
             "parentEmail":"parent1@parent.eu",
             "statusCode":1,
             "registerationDate": "2018-11-30",
@@ -11,7 +11,7 @@
         },
         {
             "parentAmount":200.5,
-            "Currency":"USD",
+            "currency":"USD",
             "parentEmail":"parent2@parent.eu",
             "statusCode":2,
             "registerationDate": "2018-01-01",
@@ -20,7 +20,7 @@
         },
         {
             "parentAmount":500,
-            "Currency":"EGP",
+            "currency":"EGP",
             "parentEmail":"parent3@parent.eu",
             "statusCode":1,
             "registerationDate": "2018-02-27",
@@ -29,7 +29,7 @@
         },
         {
             "parentAmount":400,
-            "Currency":"AED",
+            "currency":"AED",
             "parentEmail":"parent4@parent.eu",
             "statusCode":1,
             "registerationDate": "2019-09-07",
@@ -38,7 +38,7 @@
         },
         {
             "parentAmount":200,
-            "Currency":"EUR",
+            "currency":"EUR",
             "parentEmail":"parent5@parent.eu",
             "statusCode":1,
             "registerationDate": "2018-10-30",

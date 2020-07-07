@@ -18,5 +18,5 @@ $router->group(['prefix' => 'api/v1/users'], function () use ($router) {
     $router->get('/', 'UserController@users');
     $router->get('provider={providerName}', 'UserController@providerFilter');
     $router->get('statusCode={code}', 'UserController@providerSatusCodeFilter');
-
+    $router->get('currency={currency}', 'UserController@currencyFilter');
 });
