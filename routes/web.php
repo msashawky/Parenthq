@@ -14,3 +14,9 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+$router->group(['prefix' => 'api/v1/users'], function () use ($router) {
+    $router->get('/', 'UserController@users');
+    $router->get('provider={providerName}', 'UserController@providerFilter');
+    $router->get('statusCode={code}', 'UserController@providerSatusCodeFilter');
+
+});
