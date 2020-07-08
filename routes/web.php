@@ -19,4 +19,5 @@ $router->group(['prefix' => 'api/v1/users'], function () use ($router) {
     $router->get('provider={providerName}', 'UserController@providerFilter');
     $router->get('statusCode={code}', 'UserController@providerSatusCodeFilter');
     $router->get('currency={currency}', 'UserController@currencyFilter');
+    $router->get('min={min}/max={max}', 'UserController@balanceFilter');
 });

@@ -48,10 +48,22 @@ class UserRepository implements UserRepositoryInterface
         $allUsers = $this->getUsers();
         foreach ($allUsers as $users)
         {
-            if($users->currency === $currency){array_push($providers, $users);}
+            if($users->currency == $currency){array_push($providers, $users);}
         }
         return $providers;
     }
+
+    public function getBalanceFilter($min, $max){
+        $providers = array();
+        $allUsers = ($this->getFilteredProviderY())->users;
+        foreach ($allUsers as $user){
+            if($user->balance >= $min && $user->balance<= $max){
+                array_push($providers, $user);
+            }
+        }
+        return $providers;
+    }
+
 
 
 

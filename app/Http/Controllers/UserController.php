@@ -37,5 +37,8 @@ class UserController extends Controller
     public function currencyFilter($currency){
         return $this->apiResponse($this->userRepository->getcurrencyFilter($currency));
     }
+    public function balanceFilter($min, $max){
+        return $this->apiResponse($this->userRepository->getBalanceFilter($min, $max));
+    }
 
 }
